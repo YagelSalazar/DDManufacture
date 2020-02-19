@@ -1,0 +1,409 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 13%, rgba(136,136,136,1) 55%, rgba(255,255,255,1) 95%);
+}
+header{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    height: 50px;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    background: rgb(166,166,166);
+    background: linear-gradient(0deg, rgba(166,166,166,1) 6%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 55%);
+    z-index: 50;
+
+}
+.logo{
+    padding-left: 20px;
+    width: 20%;
+    padding-bottom: 10px;
+}
+.logo>img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.navegation>ul{
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-weight: 550;
+}
+li{
+    flex-grow: 1;
+}
+.link{
+    text-decoration: none;
+    color: #000;
+}
+.link:hover{
+    border-bottom: solid 2px #000;
+    font-weight: 600;
+}
+.navegation{
+    width: 80%;
+}
+/* -----------------------------------------------------cuerpo------------------------------------------------------------------------- */
+.main{
+    width: 100%;
+    height: 750px;
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/07/10/55/electric-1080584_960_720.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -10;
+    box-sizing: border-box;
+}
+.title{
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+.main p{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.main::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000071;
+    z-index: -5;
+}
+
+.pres{
+    width: 20%;
+    background-color: rgba(255, 248, 220, 0.418);
+    margin-bottom: 4%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.pres img{
+    max-width: 80%;
+    margin-bottom: 10%;
+}
+/* -----------------------------------------------------Nosotros------------------------------------------------------------------------- */
+.nosotros{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    background-image: url(https://tspacc.com.mx/wp-content/uploads/2017/06/img3mujer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vh 10vw;
+    color: #fff;
+    height: 60vh;
+}
+.cajita{
+    background-color: rgba(150, 150, 150, 0.377);
+    padding: 6vh 6vw;
+}
+.subtitle{
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+.us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+/* .us img{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    width: 50%;
+} */
+/* -----------------------------------------------------Services------------------------------------------------------------------------- */
+.services{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/12/20/27/macro-1452987_960_720.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.services .subtitle{
+    z-index: 1;
+    margin-top: 10vh;
+}
+.offer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+}
+.services::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #75757596;
+}
+
+.item{
+    width: 20%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: rgba(124, 209, 103, 0.596);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.item i{
+    font-size: 70px;
+    margin-bottom: 10%;
+}
+.item:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+/* -----------------------------------------------------Clients------------------------------------------------------------------------- */
+.clients{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://media.giphy.com/media/8oScdvaXWk0i4/giphy.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 25px;
+    flex-wrap: wrap
+}
+.clients::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #acacaccb;
+}
+.clients .subtitle{
+    z-index: 1;
+}
+.client{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+}
+.client img{
+    max-width: 10%;
+    max-height: 30%;
+    margin:1%;
+}
+/* -----------------------------------------------------Marcas------------------------------------------------------------------------- */
+.brands{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://media.giphy.com/media/xTiN0ABDi34E2xNwly/giphy.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 10vh;
+}
+.brands::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #acacac00;
+}
+.brands .subtitle{
+    z-index: 1;
+}
+.brand{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+}
+.brand img{
+    max-width: 15%;
+    max-height: 15%;
+    margin:1%;
+}
+
+footer{
+    background-color: rgb(78, 78, 78);
+    height: 300px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #fff;
+}
+.seccion{
+    flex-grow: 1;
+}
+.redes{
+    display: flex;
+    padding-top: 1%;
+    font-size: 40px;
+}
+.redes i{
+    margin-right: 10%;
+}
+.fb:hover{
+    color: #3b5998;
+}
+.tw:hover{
+    color: #00acee;
+}
+
+/* -----------------------------------------------------Formulario------------------------------------------------------------------------- */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: #fff;
+    border: solid 2px #00acee;
+    border-radius: 5vh;
+    height: 80vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-bottom: 3vh;
+}
+
+.con{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+    padding-top: 5vh;
+    color: #000;
+}
+
+.name{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0vh 10vw;
+}
+.name input, .email input{
+    height: 3vh;
+    border: solid 0px;
+}
+.name input, .email input{
+    border: solid 0.5 rgb(87, 85, 85);
+    border-bottom: solid 1px #000;
+}
+textarea{
+    border-radius: 2vh;
+}
+.email{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0vh 10vw;
+}
+
+.men{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0vh 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.men textarea{
+    width: 70vw;
+    height: 40vh;
+}
+
+.bot{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0vh 10vw;
+}
+button{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 5px;
+    background-color: rgb(49, 121, 49);
+    border: solid 1px rgb(0, 124, 21);
+    color: #fff;
+}
